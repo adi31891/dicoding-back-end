@@ -8,10 +8,11 @@ const routes = [
     options: {
       payload: {
         allow: 'multipart/form-data',
-        multipart: true
+        multipart: true,
+        maxBytes: 1000000 // Menambahkan batasan ukuran file 1MB
       }
     }
   }
-]
+];
 
 module.exports = routes;
